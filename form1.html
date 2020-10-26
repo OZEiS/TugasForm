@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Diri</title>
+    <style>
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+          background-color: #F0F8FF(117, 190, 218, 0.5);
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        .container {
+          padding: 16px;
+          background-color: pink;
+        }
+        
+        input[type=text]{
+          width: 100%;
+          padding: 15px;
+          margin: 5px 0 22px 0;
+          display: inline-block;
+          border: none;
+          background: #F0F8FF;
+        }
+        
+        input[type=text]:focus {
+          background-color: #F0F8FF;
+          outline: none;
+        }
+        
+        hr {
+          border: 1px solid #000000;
+          margin-bottom: 25px;
+        }
+        <center>
+        .registerbtn{
+          background-color: black;
+          color: white;
+          padding: 16px 20px;
+          margin: 8px 0;
+          border: none;
+          cursor: pointer;
+          width: 10%;
+          opacity: 0.9;
+        }
+        </style>
+</head>
+<body>
+    <form action="contact.php" method="POST">
+        <div class="container">
+            <h2><p>Biodata Diri</p></h2>
+            <hr>
+        <label for"name">Nama Lengkap:</label><br></br>
+        <input type="text" id="name" name="name">
+        <label for"ttl">Tempat,Tanggal Lahir:</label><br></br>
+        <input type="text" id="Tempat" name="tempat">
+        <input type="date" name="tl"><br></br>
+        <label for"Jk">Jenis Kelamin:</label><br></br>
+        <label><input type="radio" name="Jk" value="pria">Pria</label>
+        <label><input type="radio" name="Jk" value="wanita">Wanita</label>
+        <label><input type="radio" name="Jk" value="wanita">Lainnya</label><br>
+        <input type="text" id="Jk" name="Jk"><br>
+        <label for"Alamat">Alamat:</label><br></br>
+        <input type="text" id="Alamat" name="Alamat"><br>
+        <label for"Agama">Agama:</label><br></br>
+        <label><input type="radio" name="Agama" value="islam">Islam</label>
+        <label><input type="radio" name="Agama" value="Kristen">Kristen</label>
+        <label><input type="radio" name="Agama" value="Budha">Budha</label>
+        <label><input type="radio" name="Agama" value="islam">Hindu</label>
+        <label><input type="radio" name="Agama" value="lainnya">Lainnya</label></br>
+        <input type="text" id="Agama" name="Agama"><br>
+        <label for"Status ">Status Perkawinan:</label><br></br>
+        <label><input type="radio" name="Status" value="Status">Belum Menikah</label>
+        <label><input type="radio" name="Status" value="Status">Menikah</label><br></br>
+        <label for"Pekerjaan">Pekerjaan:</label><br></br>
+        <input type="text" id="Pekerjaan" name="Pekerjaan"><br>
+        <label for"Kewarganegaraan">Kewarganegaraan:</label><br></br>
+        <input type="text" id="Kewarganegaraan" name="Kewarganegaraan"><br>
+        <label for"email">Email:</label><br>
+        <input type="text" id="email"><br>
+            <input type="submit" name="submit" value="Daftar" class="registerbtn" />
+        </div>
+    </form>
+</body>
+</html>
